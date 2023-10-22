@@ -21,3 +21,11 @@
 ### Create an Edit Page:
 
 -  Develop an edit page to allow users to modify their data.
+
+# 2023-10-23
+
+-  Add dynamic data in edit.php input fields
+-  Create crud functionality for updateUser
+-  Create crud functionality for getUserByID
+-  Create current url variable
+-  Add back button to users list

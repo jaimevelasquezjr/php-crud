@@ -20,7 +20,7 @@
 
    $crud = new crud($pdo);
 
-   // $protocol = 'http'.(!empty($_SERVER['HTTPS']) ? 's' : '');
-   // $currURL = $protocol.'://'.$_SERVER['SERVER_NAME'].substr($_SERVER['PHP_SELF'], 0, strrpos($_SERVER['PHP_SELF'], '/'));
+   $protocol = 'http'.(!empty($_SERVER['HTTPS']) ? 's' : '');
+   $currURL = $protocol.'://'.$_SERVER['SERVER_NAME'].substr($_SERVER['PHP_SELF'], 0, strrpos($_SERVER['PHP_SELF'], '/'));
 
 ?>

@@ -37,7 +37,8 @@ $results = $crud->getUsers();
                               <td><?php echo $data['skill']; ?></td>
                               <td class="text-end">
                                  <a href="#" class="btn btn-primary">View</a>
-                                 <a href="/update.php?id=<?php echo $data['id']; ?>" class="btn btn-warning">Edit</a>
+                                 <a href="<?php echo $currURL; ?>/edit.php?id=<?php echo $data['id']; ?>"
+                                    class="btn btn-warning">Edit</a>
                                  <a href="#" class="btn btn-danger">Delete</a>
                               </td>
                            </tr>
