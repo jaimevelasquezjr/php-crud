@@ -18,13 +18,13 @@ $results = $crud->getUsers();
             <div class="row justify-content-center">
                <div class="col-12">
                   <div class="table-responsive">
-                     <table class="table table-dark table-bordered mb-0">
+                     <table class="table table-hover table-bordered">
                         <thead>
                            <tr>
                               <th scope="col" class="w-25">NAME</th>
                               <th scope="col">EMAIL</th>
                               <th scope="col">SKILL</th>
-                              <th scope="col" class="w-25 text-right">ACTION</th>
+                              <th scope="col" class="text-end w-25">ACTION</th>
                            </tr>
                         </thead>
                         <tbody>
@@ -35,7 +35,7 @@ $results = $crud->getUsers();
                               <th scope="row"><?php echo $data['name']; ?></th>
                               <td><?php echo $data['email']; ?></td>
                               <td><?php echo $data['skill']; ?></td>
-                              <td class="text-right">
+                              <td class="text-end">
                                  <a href="#" class="btn btn-primary">View</a>
                                  <a href="/update.php?id=<?php echo $data['id']; ?>" class="btn btn-warning">Edit</a>
                                  <a href="#" class="btn btn-danger">Delete</a>
