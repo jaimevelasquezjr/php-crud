@@ -1,30 +1,25 @@
 <?php
 
-require_once 'config.php';
 
-class Database {
+class Crud {
 
-   public $host = DB_HOST;
-   public $user = DB_USER;
-   public $pass = DB_PASS;
-   public $dbName = DB_NAME;
+   private $db; // private database object
 
-   public $link;
-   public $error;
-
-   public function __construct() {
-      $this->connectDB();
+   public function __construct($conn)
+   {
+      $this->db = $conn; // constructor to initialize private variable to the database connection
    }
 
-   private function connectDB() {
-
-      $this->link = new mysqli($this->host, $this->user, $this->pass, $this->dbName);
-
-      if(!$this->link) {
-         $this->error = "Connection failed {$this->link->coonect_error}";
+   public function getUsers() 
+   {
+      try {
+         $sql = "SELECT * FROM `php_user`";
+         $result = $this->db->query($sql);
+         return $result;
+      } catch (PDOException $e) {
+         echo $e->getMessage();
          return false;
       }
-
    }
    
 }
