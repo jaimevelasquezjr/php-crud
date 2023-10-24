@@ -43,7 +43,7 @@ class Crud {
          $stmt = $this->db->prepare($sql);
 
          $stmt->bindparam(':id', $id);
-         $stmt->bindparam(':name', $name);
+         $stmt->bindparam(':fname', $name);
          $stmt->bindparam(':email', $email);
          $stmt->bindparam(':skill', $skills);
 

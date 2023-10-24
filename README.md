@@ -29,3 +29,10 @@
 -  Create crud functionality for getUserByID
 -  Create current url variable
 -  Add back button to users list
+
+# 2023-10-25
+
+-  Create editpost and add functionality
+-  Create error-message
+-  Create success-message
+-  🔁 Add success message when user successfully updated
